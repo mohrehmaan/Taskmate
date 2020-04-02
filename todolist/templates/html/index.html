@@ -1,0 +1,80 @@
+{% extends 'base.html' %} {% load static %} {% block title %}
+<title>Taskmate</title>
+{% endblock title %} {% block content %}
+<div class="container-fluid ">
+  <div class="row ml-1 mb-2  mt-5">
+    <div class=" col d-lg-flex ">
+      <img
+        class="ab mm mt-2 mb-2 shadow rounded-lg"
+        src="{% static 'images/1.jpg'%}"
+        alt="notes"
+        width="360"
+        height="250"
+      />
+    </div>
+    <div class=" col d-lg-flex">
+      <img
+        class="ab cd mt-2 mb-2 shadow rounded-lg"
+        src="{% static 'images/2.jpg'%}"
+        alt="notes"
+        width="360"
+        height="250"
+      />
+    </div>
+    <div class=" col d-lg-flex ">
+      <img
+        class="ab cd mt-2 mb-2 shadow rounded-lg"
+        src="{% static 'images/3.jpg'%}"
+        alt="notes"
+        width="360"
+        height="250"
+      />
+    </div>
+  </div>
+  <div class="row mb-1">
+    <div class="col">
+      <center>
+        <p class="h1">
+          Taskmate. <br />
+          Use Anytime, Anywhere!
+        </p>
+      </center>
+    </div>
+  </div>
+  <div class="row mt-1 mb-1">
+    <div class="col">
+      <center>
+        <p class="h2 cd">Plan your day better, Get Organised to Achieve.</p>
+      </center>
+    </div>
+  </div>
+  <div class="row mt-1 mb-1">
+    <div class="col">
+      <center>
+        <p class="h3 cd">Lets You Keep Track of Your Task in One Place.</p>
+      </center>
+    </div>
+  </div>
+  <div class="row mt-1">
+    <div class="col">
+      {% if user.is_authenticated %}
+      <center>
+        <a href="{% url 'todolist' %}"
+          ><button type="button" class="btn btn-dark btn-lg mt-2 shadow-lg">
+            Get Started
+          </button></a
+        >
+      </center>
+      {% else %}
+      <center>
+        <a href="{% url 'register' %}"
+          ><button type="button" class="btn btn-dark btn-lg mt-2 shadow-lg">
+            Get Started
+          </button></a
+        >
+      </center>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock content %}
