@@ -1,12 +1,52 @@
-{% extends 'base.html' %}
-
-{% block title %}
-    <title>Contact Us Manager - Taskmate</title>
-{% endblock title %}
-    
-
-{% block content %}
-    <div class="container">
-        <h1>{{ contact_text }}</h1>
-    </div>
+{% extends 'base.html' %} {% block title %}
+<title>Contact Us Manager - Taskmate</title>
+{% endblock title %} {% block content %}
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <p class="text-white h2">Hello!,Im Moh Rehmaan</p>
+  </div>
+  <div class="row mt-4 mb-4">
+    <p class="text-white h4">
+      Im a Btech 4th year student and im learning Django from last month that is
+      march 2020.
+    </p>
+  </div>
+  <div class="row mt-4 mb-4">
+    <p class="text-white h4">
+      This is my First Full Stack Web application/Project which is built with
+      Django(Python) and This application uses Databases to store the Data that
+      is Tasks which can be added and can be accesed by a Genuine user that is
+      Authenticated User only.
+    </p>
+  </div>
+  <div class="row mt-4 mb-4">
+    <p class="text-white h4">
+      Im a Newbie full stack web developer Fluent with Python,Django,Html,Css,
+      JS and Bootstrap and learning jQuery
+    </p>
+  </div>
+  <div class="row mt-4 mb-4">
+    <p class="text-white h4">
+      Also check my code on
+      <a href="https://github.com/mohrehmaan/Taskmate" class="text-white"
+        ><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAARCAYAAACb8i8UAAAC6klEQVRIS+3WWchQVRQF4M/mwcyigSCthyQkiwgqI2wgRaKJ6CWCfJKCgiSKaEArtbLhQUELG6Akit5KIzQqEESiqEyboZQCjeAvs/Q3DIsF+9Llcv8BKSxoP91hn332Onuvtc8Yf9kVuA3n4mjsxrd4A3eU2yQcgC9b6/oe51aMr/B0y2EWzsJvuG+EGPk9Bo/Wnh/g5e6aOMTuxUNDBHwf5+FSvFU+M+v5IBxW33bij3r+HidiLS5pxX0V19ThHD4KAIm/p/xewfV9AM7Ex4U2/9fgPezFRHyOx3ETlleAW/BUVeaJ+jYZX+wPAEtxa218d5Ws73AOxTwciAfqFO8scPE/A5+NEsAgjvi7KpDTT1/+jONbJevGv6DFhUdwMm7HxeX4DnbgBmweoYUaAM/gqOqAxIyloon9Ne5v5ZM8t+Fs/IoX0vbhwI84BuswrVWJprebtjqlRaJrsQin95xiYqWVwoGhrAGwvcj+NqaXc9Ym7oYSlIYDfbHmBEAcQpbVuLy8gvDI1op7sKUDYEIR8rLyi9r8gAWlXsMB2FXxhwPwUYlHAyDvUa5xeL7EY0MA/ITxWI8LK5koz3E4td77AERR2hyIGHzS4UBkNALQWLiWFtgXAM9hdgV6HZH9wQDYhCn4BScUOeOXjYI6tq8AujL6Gq4eJYAPcX6LA20A6f/MlL0BsKQGWBKNujxYSf8TAFbiKmRmjMVwLTQcgKYCAwFwWsnfwZX4u6X9UYIZI1Qg82BZ+USO3ywufTeECq3ClS0AW3ESBqo9wpvHqs8zeae2KpD2XIjIeWZQZHhtM4lvRErUgOgy/i4kqWaUR4XCgahFAkcEGktCUZC+SdwFsALZu8+6APp8ZjUA8jPJZNoGdbiQ+0pImLK/VDzJXSm2uJLMc5RrDqJK0emASxsei087JM76c4oDqV7uXA/jIhyCjXgR1+EbzMez+B3hz83IfSwzK+CfbAMY4iD+3Z//B7C/6/Ofr8Cfpn3XTN5aT7cAAAAASUVORK5CYII="
+          alt=""/><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD10lEQVRoQ+3YWeh2UxQG8N9nLFMyZiqUEDIlhQxxYYpk6COkjHdccIUbU1GE3KDIECEylJkoc8mQCzIrc2ZChJ7ap17Hef9nv+85pa/edXMu9lnPWs9ea6+91l5mBZdlK7j/FgT+7wguIrCIwMAdWKTQwA0crD52BDbAQdgD22Dd4uF3eBev4El8O9jzAjAWgb1xHg7DKj3O/YGHcHkhNIjLUAKb4jocNacXd+FsfDmn/qCb+ADEgQ3nNV70vsCxeG4enHkjcATuxurzGO3Q+Q1H4+FZ8eYhsE85iGM53/j8KxLVl2chMSuBVJk3kNxv5CqsX87BOpXGf8B9yPecCZ1PsAtStapkVgI345QJ5BiK83+XknkBziokUzabcrketsVO5dBfhh+xcnF27QnM6wvG6AR2xJv86+C/ht1allbCX1Osd60FM8Qaie4OeLuGwSwRaO9+8N/BdjWGlvjnfWzdWr8BZ9bg1hJYo9TqtVqgSZGN8WeNsY5/VsPXaJ+dnI3g/t6HW0vgkCklLufhlj4jPetnIHnflgPxdB92LYGLcGEL7DNssUS+99lu1ldFsFLhJiUF4dI+kFoCuXGPa4HdiRP6DFSu348jW//ejpP69GsJJJS5ZCbl2tLH9NmoWb8Rp7V+fAwH9ynXEngee7XAqitFnxO4DSe2/nsW+/fp1hJ4ovT5k3iPIod7DImz+7aAHsGhfeC1BFJpTm6BDS2hDVx6qm+wZgs/aZUKtaTUEsiwckUH0jG4t89Iz3pSJynUlswJOWejENgTL3UgfYDd8X2foSnrKZ1pRzbvWN8Vr/fh1kYgPUw6xc06AF9FIvFRn7HWembme7Bzh16w0l6kSRwlAgGZvMzOLeC53DK4ZyBJGiSdEqm0Al2SHU80Qzh3SFqJLqm6xKJYG4H8m9ExjVda309xeGmHX0Ru00YSqXSTP7c8C9G3pkRx8tekY3a/aiaYhUCMTB7mD7F96d2vnvAgUblkys52tSTtXzPgXNOXOs36rAQygDyDjJWRU3FTeQfaD5/jQfw0xYHjcccSzgU7Tdy0eeI/qrMSCMAmeAFbIi8KuYAyfdVIXh/yGNAlSc/c9l/VAM0bgUZvKzyFfH9BGrtMVrmUckMn17skDWEaw7a8V276j2dxPv/OE4HGRg51HE/IJyWPXOkuawk8XipSbuOZZQiBZgNOx8XYqFjP+05eHLpkeSGdtbzGnV/OUG+9n8ZsKIEGNyNneqU8eKUFmHYmUrWuxAO4FXkLGiRjERjkxBDlBYEhuzeG7iICY+ziEIxFBIbs3hi6iwiMsYtDMP4BRamiMTpOI9cAAAAASUVORK5CYII="
+          alt=""
+      /></a>
+    </p>
+  </div>
+  <div class="row mt-4 mb-4">
+    <p class="text-white h4">
+      You can contact me here
+      <a href="mailto:mohrehmaan@gmail.com" class="text-body">
+        Mail
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEYUlEQVRoQ92aT0hlVRzHP4pmpcWIIjOYEBTURjfDkBsphZnRTU0grloEJSYiiUygkIRJLlJLFzomRWTmRrAMhKkW2S4TN+KiaIIZKW0xMqlYJqLxvd0rb+7c9+655933Ruds7+/f95zfv3N+N4d41iPAZeAF4FngKaAYeMwVvwPcAX4DfgYWgG+Af9JVn5OGABn4EnAFuAg8GlHW38B3wFfAnAswogiwAVAIdAJXgccjawxm2AYGgA8AATNeUQDkAa8D7wBnjTVEI9wA3gU+Bg5MWE0BPOEe9XkToTHQLLuu+XuYLBMA1cCXGdz1ZDb+6YJYTAUiDMAr7nEWhO1Ehr7vAc3AVDL5qQDI+M8zZFhUsbLliyCmZACeA34A7tfO+23VSajG3ONOQQAUsEv3wefDTkUxcQG4K7D9AJQqfwSylW3CjPZ/V3ZSUjlOsX4AbwDXokrNMr1s/MjTmQhAFfbGCXQd//6o2D3tVexEAG8DfVneTVt1svU9MXsA1JjdSugebQVni0+905NqAD0ArwKfZkt7THpk82ceALW0ao1D18DAAB0dHeTlKWHFt7a3t2ltbWV6etpUqGx+WQDUx98GdCkJXXt7exQUZKa+LSwsUFtbG2qDS6C2u1QAdCFRs2a0jo6OODw8pKGhga6urigKA+XPzc0xMzPD1NQUi4uLVFcrzRuvKwIwDLxpyiIAWktLSzQ3N1NVVcXg4CBlZWWmIhy69fV12tvb2djYcACUl5fbABgRgOvufdbIAA+AiA8ODhgeHmZkZISenh4HUE5O6gZXpzc+Pk5/fz/d3d2O3+fm5jq6LU7gurT96haGyAA8hrW1Ndra2tjc3HSM06kErdXVVQdkaWkpY2NjVFRU3EVmAeCGACiAS4ysBxJPwM8zOztLZ2cnjY2N9Pb2Ulio4g4K/L6+PiYnJxkaGqKpqSlQnQWA2wLwL/BQHAAkY2dnx3EnBafcq6ioyHGTmpoaJ1aKi1Uzg5cFgP3YAXimLS8v09LSwu7uLqOjo9TV1YXukS2A2FzIb6ECVkEdFtgenwUAx4XSDuLQrTUksADgBLF1GjW0y5jMAoCTRq0KmbFVEQgtADiFLHIrEcGmSKQWAJxWIlIzl6oORLI2gDgigONmTqKM2+mVlRUqKyvTtTWQf2Jiwkm9huu4nRa98YWmpKSE+vp68vPzDfWYkW1tbTE/P8/+/r4Zw/82H19oVB5vxvhcbmqELd09V0oJOtWXegFQMGsElKm3f9vd9vMlfVYR4al+2BKAU/+0KBAn9XFXrqPH3T8SfSrV87pGoQ/H5bhpytHz+vPAT345D+yAwwN6EkZMmowGTmdkZNiMTDSa1qhsZzu9xjLk807iVI9ZPRBKsa+5g+5zaQZlMnZlml7gk7gH3YkKVbH1q8FbMfZO6m3eBz7M5K8G/l1TA/iieyG6ZPmzx7dufH2dzZ89go5fL9sCoaflZ9yXvjMJJ6Qd/ssdYf0CfA/I+LR/t/kP84JT/Lv8G2kAAAAASUVORK5CYII="
+          alt=""
+      /></a>
+    </p>
+  </div>
+</div>
 {% endblock content %}
